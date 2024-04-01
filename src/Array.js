@@ -1,19 +1,28 @@
 import {
   CashIcon,
+  CrmManager,
   DateTimeIcon,
   ExectiveLevalIcon,
   FeaturedIcon,
   FullTimeIcon,
   HiringIcon,
+  HomeStoryIcon,
+  Knowledge,
   Lines,
+  MainPage,
   MonthlyIcon,
+  MyProfile,
   OnSiteIcon,
+  PackagesIcon,
+  PortFolioIcon,
   ReactBtnIcon,
   ReportIcon,
   SalesIcon,
   SaveIcon,
   ShareIcon,
+  SmManager,
   StartIcon,
+  SupportIcon,
   UaeIcon,
   VvExclusiveIcon,
 } from "./shared";
@@ -91,6 +100,63 @@ export const button = [
   },
 ];
 
-export const line = [
-    <Lines />,
+export const line = [<Lines />];
+
+export const FotterHomeSection = [
+  {
+    name: "The Dream",
+    icon: <HomeStoryIcon />,
+  },
+  {
+    name: "The People",
+    icon: <HomeStoryIcon />,
+  },
+  {
+    name: "Let's Talk",
+    icon: <HomeStoryIcon />,
+  },
+  {
+    name: "For Standards",
+    icon: <HomeStoryIcon />,
+  },
+  {
+    name: "For Vendors",
+    icon: <HomeStoryIcon />,
+  },
+  {
+    name: "For Ambassadors",
+    icon: <HomeStoryIcon />,
+  },
+  {
+    name: "Main Page",
+    icon: <MainPage />,
+  },
+  {
+    name: "My Profile",
+    icon: <MyProfile />,
+  },
+  {
+    name: "Portfolio",
+    icon: <PortFolioIcon />,
+  },
+  {
+    name: "Packages",
+    icon: <PackagesIcon />,
+  },
+  {
+    name: "SM Manager",
+    icon: <SmManager />,
+  },
+  {
+    name: "CRM Manager",
+    icon: <CrmManager />,
+  },
+  {
+    name: "Support Center",
+    icon: <SupportIcon />,
+  },
+  {
+    name: "Knowledge Base",
+    icon: <Knowledge />,
+  },
 ];
