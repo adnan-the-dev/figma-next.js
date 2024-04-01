@@ -1,3 +1,4 @@
+import Banner from "@/components/layout/Banner";
 import Header from "@/components/layout/Header";
 import { Inter } from "next/font/google";
 
@@ -8,6 +9,7 @@ export default function Home() {
     <>
       <div>
         <Header />
+        <Banner/>
       </div>
     </>
   );
