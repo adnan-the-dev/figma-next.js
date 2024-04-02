@@ -88,7 +88,7 @@ export default function Banner() {
           </div>
           <div>
             <h1 className="font-bold text-white">Home</h1>
-            <h1 className="font-bold text-white my-3">The Story</h1>
+            {/* <h1 className="font-bold text-white my-3">The Story</h1> */}
 
             <div className="flex flex-col gap-2">
               {FotterHomeSection?.map((item, i) => {
@@ -97,6 +97,7 @@ export default function Banner() {
                     <div key={i} className="flex items-center gap-1">
                       {item.icon}
                       <span className="text-white text-sm">{item?.name}</span>
+                      <h1 className="text-white font-extrabold">{item?.tag}</h1>
                     </div>
                   </>
                 );

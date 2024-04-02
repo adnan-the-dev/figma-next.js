@@ -145,7 +145,7 @@ export const line = [<Lines />];
 
 export const FotterHomeSection = [
   {
-    name: "The Opportunity",
+    tag: "The Story",
   },
   {
     name: "The Dream",
@@ -160,6 +160,9 @@ export const FotterHomeSection = [
     icon: <HomeStoryIcon />,
   },
   {
+    tag: "The Opportunity",
+  },
+  {
     name: "For Standards",
     icon: <HomeStoryIcon />,
   },
@@ -170,6 +173,9 @@ export const FotterHomeSection = [
   {
     name: "For Ambassadors",
     icon: <HomeStoryIcon />,
+  },
+  {
+    tag: "The Agency",
   },
   {
     name: "Main Page",
@@ -194,6 +200,9 @@ export const FotterHomeSection = [
   {
     name: "CRM Manager",
     icon: <CrmManager />,
+  },
+  {
+    tag: "The Hub",
   },
   {
     name: "Support Center",
