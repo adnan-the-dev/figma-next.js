@@ -1,4 +1,4 @@
-import { FotterHomeSection } from "@/Array";
+import { FotterHomeSection, TheAssets, TheMembers, TheVsArray } from "@/Array";
 import {
   BannerMessageIcon,
   FaceBook,
@@ -26,7 +26,7 @@ export default function Banner() {
         style={{ backgroundImage: `url('/bg.png')`, height: "700px" }}
       >
         {/* You can place your content here */}
-        <div className="grid grid-cols-5 gap-2">
+        <div className="grid grid-cols-5 gap-9">
           <div className="">
             <p className="text-white text-sm">
               Proudly, The 1st of It's Kind Worldwide, AIO Digital Platform For
@@ -93,7 +93,22 @@ export default function Banner() {
             <div className="flex flex-col gap-2">
               {FotterHomeSection?.map((item, i) => {
                 return (
-                  <div className="flex items-center gap-1">
+                  <>
+                    <div key={i} className="flex items-center gap-1">
+                      {item.icon}
+                      <span className="text-white text-sm">{item?.name}</span>
+                    </div>
+                  </>
+                );
+              })}
+            </div>
+          </div>
+          <div>
+            <h1 className="font-bold text-white my-3">The Vs</h1>
+            <div className="flex flex-col gap-2">
+              {TheVsArray?.map((item, i) => {
+                return (
+                  <div key={i} className="flex items-center gap-1">
                     {item.icon}
                     <span className="text-white text-sm">{item?.name}</span>
                   </div>
@@ -101,9 +116,32 @@ export default function Banner() {
               })}
             </div>
           </div>
-          <div className="border-2">01</div>
-          <div className="border-2">01</div>
-          <div className="border-2">01</div>
+          <div>
+            <h1 className="font-bold text-white my-3">The Assets</h1>
+            <div className="flex flex-col gap-2">
+              {TheAssets?.map((item, i) => {
+                return (
+                  <div key={i} className="flex items-center gap-1">
+                    {item.icon}
+                    <span className="text-white text-sm">{item?.name}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div>
+            <h1 className="font-bold text-white my-3">The Members</h1>
+            <div className="flex flex-col gap-2">
+              {TheMembers?.map((item, i) => {
+                return (
+                  <div key={i} className="flex items-center gap-1">
+                    {item.icon}
+                    <span className="text-white text-sm">{item?.name}</span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
       </div>
     </>
