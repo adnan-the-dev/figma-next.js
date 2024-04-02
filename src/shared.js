@@ -1838,7 +1838,8 @@ export function ShortsIcon() {
         d="M5.7981 9.20412L5.69292 9.45527L5.79809 9.20412L5.7981 9.20412ZM9.89183 8.00203L7.81279 9.10392V6.90014L9.89183 8.00203Z"
         fill="#016DEA"
         stroke="white"
-        stroke-width="0.799951"
+        // stroke-width="0.799951"
+        stroke-width="7"
       />
     </svg>
   );
