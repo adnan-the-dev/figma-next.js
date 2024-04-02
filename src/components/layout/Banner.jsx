@@ -5,6 +5,7 @@ import {
   FotterCallIcon,
   FotterInbox,
   FotterMapIcon,
+  Heart,
   Linkdin,
   Pinterest,
   SnapChat,
@@ -22,17 +23,17 @@ export default function Banner() {
         </div>
       </div> */}
       <div
-        className="bg-cover bg-center bg-no-repeat pr-4 pl-4 pt-4"
-        style={{ backgroundImage: `url('/bg.png')`, height: "700px" }}
+        className="bg-cover bg-center bg-no-repeat px-[2rem] pt-4"
+        style={{ backgroundImage: `url('/bg.png')` }}
       >
         {/* You can place your content here */}
-        <div className="grid grid-cols-5 gap-9">
-          <div className="">
+        <div className="grid gap-[5rem] grid-cols-auto-minmax">
+          <div className="my-3">
             <p className="text-white text-sm">
               Proudly, The 1st of It's Kind Worldwide, AIO Digital Platform For
               The Global Community Of The Veterinary Industry
             </p>
-            <hr className="border-1 border-gray-300 my-4" />
+            <hr className="border-1 border-white-300 my-4" />
             <h2 className="font-bold text-white my-3">Let's Talk</h2>
 
             <div className="grid grid-rows-3 grid-flow-col gap-2">
@@ -51,7 +52,7 @@ export default function Banner() {
                 </span>
               </div>
             </div>
-            <hr className="border-1 border-gray-300 my-4" />
+            <hr className="border-1 border-white-300 my-4" />
             <div className="grid grid-cols-7">
               <div>
                 <Linkdin />
@@ -75,7 +76,7 @@ export default function Banner() {
                 <Pinterest />
               </div>
             </div>
-            <hr className="border-1 border-gray-300 my-4" />
+            <hr className="border-1 border-white-300 my-4" />
             <h2 className="font-bold text-white my-3">Coming Soon</h2>
             <div className="flex items-center gap-3">
               <div>
@@ -87,10 +88,10 @@ export default function Banner() {
             </div>
           </div>
           <div>
-            <h1 className="font-bold text-white">Home</h1>
+            <h1 className="font-bold text-white my-3">Home</h1>
             {/* <h1 className="font-bold text-white my-3">The Story</h1> */}
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 my-3">
               {FotterHomeSection?.map((item, i) => {
                 return (
                   <>
@@ -143,6 +144,12 @@ export default function Banner() {
               })}
             </div>
           </div>
+        </div>
+        <hr className="border-1 border-white-300 my-4" />
+
+        <div className="flex justify-between flex-wrap pb-3 text-white">
+          <div className="flex">Built with{<Heart/>}By Area-H</div>
+          <div>Privacy Policy - Terms & Conditions</div>
         </div>
       </div>
     </>
