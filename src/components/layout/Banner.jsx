@@ -1,4 +1,11 @@
-import { FotterHomeSection, TheAssets, TheMembers, TheVsArray } from "@/Array";
+import {
+  Firstbutton,
+  FotterHomeSection,
+  TheAssets,
+  TheMembers,
+  TheVsArray,
+  line,
+} from "@/Array";
 import {
   BannerMessageIcon,
   FaceBook,
@@ -17,16 +24,56 @@ import React from "react";
 export default function Banner() {
   return (
     <>
-      {/* <div className=" pl-2 pr-2">
-        <div className="flex justify-center items-center h-[500px] rounded-md w-[100%] bg-gradient-to-r from-indigo-500 via-blue-500 to-red-500">
-          <BannerMessageIcon />
+      <div className=" pl-2 pr-2">
+        <div className="h-[600px] rounded-md w-[100%] bg-gradient-to-r from-indigo-500 via-blue-500 to-red-500">
+          {line?.map((item, i) => {
+            return (
+              <div key={i} className="flex items-center justify-center py-2">
+                <div>{item.name}</div>
+                <div>{item.name1}</div>
+                <div>{item.name1}</div>
+                <div>{item.name1}</div>
+                <div>{item.name1}</div>
+              </div>
+            );
+          })}
+
+          <div className="flex items-center pl-[1rem] gap-2">
+            <div>
+              <img
+                class="h-14 w-14"
+                // src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                src="./profile.svg"
+                alt=""
+              />
+            </div>
+            <div className="font-bold text-white">Dr. Sofia Ibrahim</div>
+          </div>
+          <div className="">
+            <div>Pending</div>
+            <hr className="border-1 border-white-300 my-4" />
+            <div className="flex">
+              {Firstbutton?.map((item, i) => {
+                return (
+                  <div className="px-3">
+                    <button class="text-white flex items-center justify-center gap-1 rounded-full bg-gradient-to-r from-FA4001-400 via-CD0D14-500 via-A91D1E-500 to-812924-500 px-2 py-2">
+                      {item.icon}
+                      {item.name}
+                    </button>
+                  </div>
+                );
+              })}
+            </div>
+            <hr className="border-1 border-white-300 my-4" />
+          </div>
         </div>
-      </div> */}
-      <div
+      </div>
+
+      {/* ////Fotter////// */}
+      {/* <div
         className="bg-cover bg-center bg-no-repeat px-[2rem] pt-4"
         style={{ backgroundImage: `url('/bg.png')` }}
       >
-        {/* You can place your content here */}
         <div className="grid gap-[5rem] grid-cols-auto-minmax">
           <div className="my-3">
             <p className="text-white text-sm">
@@ -89,8 +136,6 @@ export default function Banner() {
           </div>
           <div>
             <h1 className="font-bold text-white my-3">Home</h1>
-            {/* <h1 className="font-bold text-white my-3">The Story</h1> */}
-
             <div className="flex flex-col gap-2 my-3">
               {FotterHomeSection?.map((item, i) => {
                 return (
@@ -151,7 +196,7 @@ export default function Banner() {
           <div className="flex">Built with{<Heart/>}By Area-H</div>
           <div>Privacy Policy - Terms & Conditions</div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

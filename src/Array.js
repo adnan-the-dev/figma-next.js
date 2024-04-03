@@ -18,6 +18,7 @@ import {
   JobsIcon,
   Knowledge,
   Lines,
+  LinesColor,
   MainPage,
   MonthlyIcon,
   MyProfile,
@@ -139,7 +140,14 @@ export const button = [
   },
 ];
 
-export const line = [<Lines />];
+export const line = [
+  {
+    name: <Lines />,
+    name1: <LinesColor />,
+  },
+  // {
+  // },
+];
 
 /////Fotter Section/////
 
